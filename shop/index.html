@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="ru">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Personal Area</title>
+    <link rel="stylesheet" href="css/style.css">
+</head>
+
+<body>
+    <section class="main">
+        <div class="container">
+            <div class="image_block">
+              <div class="img_btn"><button class="b_i"><a href="main.html">  &lt; back</a></button></div>
+                <div class="image_high">Rock-Star is the eighth <br> Korean-language album by <br> South Korean boy band Stray Kids. </div>
+            </div>
+            <div class="form_block">
+                <div class="form_high">Registration</div>
+                <div class="form_min">Lorem ipsum dolor sit amet consectetur adipisicing <br> elit. Corrupti </div>
+
+                <div id="registrationForm">
+                    <form>
+                      <div class="input-container">
+                        <input type="text" id="name" name="name" required placeholder="Your Name">
+                      </div>
+                
+                      <div class="input-container">
+                        <input type="email" id="email" name="email" required placeholder="Email">
+                      </div>
+                
+                      <div class="input-container">
+                        <input type="password" id="password" name="password" required placeholder="Password">
+                      </div>
+                
+                      <input type="submit" value="Зарегистрироваться">
+                    </form>
+                
+                    <p><a href="#" id="switchToLogin">Log In</a></p>
+                  </div>
+                
+                  <div id="loginForm" class="hidden">
+                    <span class="enter">Enter</span>
+                    <form>
+                      <div class="input-container">
+                        <input type="email" id="email" name="email" required placeholder="Email">
+                      </div>
+                
+                      <div class="input-container">
+                        <input type="password" id="password" name="password" required placeholder="Password">
+                      </div>
+                
+                      <input type="submit" value="Войти">
+                    </form>
+                
+                    <p><a href="#" id="switchToRegistration">Registrate</a></p>
+                  </div>
+            </div>
+        </div>
+    </section>
+    <script src="js/cabinet.js"></script>
+</body>
+
+</html>

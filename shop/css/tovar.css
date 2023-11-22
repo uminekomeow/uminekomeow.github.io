@@ -1,0 +1,133 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing:border-box;
+  font-family: Roboto, sans-serif;
+}
+
+body {
+  min-height: 100vh;
+  background:#adadad;
+  padding: 60px 20px;
+}
+
+.container{
+  margin: 0px auto 0px;
+  background:#f1f1f1;
+  width: 900px;
+  box-shadow: 0 3px 6px rgb(255, 169, 209), 0 3px 6px rgba(255, 84, 212, 0.534);
+  border-radius:10px;
+}
+
+.left {
+  padding: 60px;
+  border-bottom: 3px solid rgba(255, 0, 149, 0.123);
+}
+
+.left img {
+  width: 70%;
+}
+
+.left .fa {
+  cursor: pointer;
+  position: absolute;
+  top: 40px;
+  color: #eaeaea;
+  font-size: 18pt;
+  transition: all .6s;
+}
+
+.left .fa:hover {
+ color: #ccc; 
+}
+
+.left .fa-arrow-left {
+  left: 40px;
+}
+
+.left .fa-arrow-right {
+  right: 40px;
+}
+
+.right {
+  border-left: 2px solid rgba(255, 0, 170, 0.219);
+  padding: 40px;
+  padding-bottom: 0;
+  background: #fff0f8;
+  border-radius: 10px;
+}
+
+.categorie {
+  margin-top: 10px;
+  font-size: 19pt;
+  text-transform: uppercase;
+  font-weight: 300;
+  color: #e74db9;
+}
+
+.product {
+  font-size: 21pt;
+  margin-top: 10px;
+  font-weight: 500;
+  color: #e251a6;
+}
+
+.desc {
+  margin-top: 50px;
+  color: #f54ecb;
+}
+
+.desc li {
+  font-size: 18px;
+  margin: 30px -5px;
+  transition: all 0.5s ease;
+}
+
+.price {
+  margin-top: 20px;
+  margin-bottom: 30px;
+  font-size: 28px;
+  font-weight: 400;
+  display: inline-flex;
+}
+
+.buy {
+  display: inline-flex;
+  background-color: #f4f1f5;
+  margin-top: 90px;
+  padding: 14px 35px 12px 35px;
+  color: #ffaeeb;
+  border-radius: 30px;
+  text-transform: uppercase;
+  font-weight: bold;
+  transition: all .6s;
+  border: 2px solid #ff7fe3;
+  cursor: pointer;
+}
+
+.buy:hover {
+  color: #ffffff;
+  background-color: #ff61c2;
+}
+
+.b_i{
+  width: 100px;
+  height: 50px;
+  background: rgba(0, 0, 0, 0);
+  color: rgb(255, 255, 255);
+  border-color: rgb(255, 69, 165);
+  border-radius: 30px;
+  margin: 20px;
+}
+
+
+.b_i a{
+  margin-left: 3px;
+  font-size: 18px;
+  font-weight: 600;
+  line-height: 50px;
+  letter-spacing: 1px;
+  text-align: left;
+  color: rgb(255, 69, 165);
+text-decoration: none;
+}

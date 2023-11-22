@@ -1,0 +1,148 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Roboto, sans-serif;
+}
+
+.main .container {
+    display: flex;
+}
+
+.image_block {
+    backdrop-filter: blur(8px);
+    background: url(../img/bg_8.webp) center center/cover no-repeat;
+    width: 770px;
+    height: 100vh;
+}
+
+.b_i{
+    width: 100px;
+    height: 50px;
+    background: rgb(0, 0, 0);
+    color: rgb(255, 255, 255);
+    border-color: rgb(255, 69, 165);
+    border-radius: 30px;
+    margin: 20px;
+}
+
+.image_high {
+    margin-top: 370px;
+    margin-left: 100px;
+    font-size: 40px;
+    font-weight: 600;
+    line-height: 50px;
+    letter-spacing: -1px;
+    text-align: left;
+    color: rgb(255, 69, 165);
+}
+
+.form_block {
+    width: 770px;
+    height: 100vh;
+    background: rgba(0, 0, 0, 0.907);
+}
+
+.form_high {
+    margin-top: 200px;
+    margin-left: 100px;
+    font-size: 40px;
+    font-weight: 600;
+    line-height: 50px;
+    letter-spacing: -1px;
+    text-align: left;
+    color: rgb(255, 69, 165);
+}
+
+.form_min {
+    margin-left: 100px;
+    margin-top: 15px;
+    font-size: 18px;
+    font-weight: 400;
+    line-height: 28px;
+    text-align: left;
+    margin-bottom: 20px;
+    color: rgb(255, 69, 165);
+}
+
+.hidden {
+    display: none;
+}
+
+input[type="text"],
+input[type="email"],
+input[type="password"] {
+    background-color: #ffffff00;
+    border-color: rgb(255, 69, 165);
+    border-radius: 5px;
+    font-size: 20px;
+    padding: 4px 9px;
+    height: 60px;
+    width: 65%;
+    margin-bottom: 10px;
+    font-style: italic;
+    resize: none;
+    margin-left: 100px;
+}
+
+input::placeholder{
+    color: rgb(255, 69, 165); 
+}
+
+input[type="submit"] {
+    width: 189px;
+    height: 50px;
+    font-size: 14px;
+    font-weight: 500;
+    line-height: 24px;
+    letter-spacing: 2px;
+    text-align: center;
+    background: rgb(255, 48, 186);
+    color: rgb(255, 255, 255);
+    border-color: rgb(255, 69, 165);
+    border-radius: 5px;
+    margin-left: 100px;
+}
+
+input[type="submit"]:hover {
+    background: #fff6f6;
+    color: rgb(255, 48, 186);
+    transition: 0.4s;
+}
+
+.enter {
+    margin: 50px 0 0 100px;
+    font-size: 20px;
+    font-weight: 600;
+    line-height: 50px;
+    letter-spacing: -1px;
+    text-align: left;
+    color: rgb(255, 69, 165);
+}
+
+p{
+    margin-top: 10px;
+    margin-left: 100px;
+    font-size: 18px;
+    font-weight: 600;
+    line-height: 50px;
+    letter-spacing: 1px;
+    text-align: left;
+    color: rgb(255, 69, 165);
+}
+
+a{
+    margin-left: 3px;
+    font-size: 18px;
+    font-weight: 600;
+    line-height: 50px;
+    letter-spacing: 1px;
+    text-align: left;
+    color: rgb(255, 69, 165);
+    text-decoration: none;
+}
+
+a:hover{
+    color: rgb(255, 142, 200);
+    transition: 0.2s;
+}
