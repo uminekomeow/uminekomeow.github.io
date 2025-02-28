@@ -1,0 +1,568 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  background: #08060b;
+
+  background-blend-mode: overlay;
+  background-size: 150% 150%; /* Увеличиваем размер градиента */
+  background-position: -100% center; /* Сместить градиент еще больше влево */
+  overflow-x: hidden;
+  position: relative;
+  font-family: "Raleway", sans-serif;
+  color: #ffffff;
+}
+
+.background-circle-1 {
+  position: absolute;
+  width: 917px;
+  height: 917px;
+  top: -319px;
+  left: -327px;
+  background: radial-gradient(50% 50% at 50% 50%, #04080d 0%, #f26430 100%);
+  border-radius: 50%;
+  filter: blur(200px);
+  z-index: 1;
+}
+
+.background-circle-2 {
+  position: absolute;
+  width: 1599px;
+  height: 1599px;
+  top: 206px;
+  left: -639px;
+  background: radial-gradient(
+    50% 50% at 49.97% 48.13%,
+    #5a0007 0%,
+    #040308 100%
+  );
+  border-radius: 50%;
+  filter: blur(200px);
+  z-index: 1;
+}
+
+.background-circle-3 {
+  position: absolute;
+  width: 917px;
+  height: 917px;
+  left: 1461px;
+  top: 1538px;
+  background: radial-gradient(50% 50% at 50% 50%, #04080d 0%, #f26430 100%);
+  border-radius: 50%;
+  filter: blur(200px);
+  z-index: 1;
+}
+
+.background-circle-4 {
+  position: absolute;
+  width: 1599px;
+  height: 1599px;
+  top: 2506px;
+  left: -539px;
+  background: radial-gradient(
+    50% 50% at 49.97% 48.13%,
+    #5a0007 0%,
+    #040308 100%
+  );
+  border-radius: 50%;
+  filter: blur(200px);
+  z-index: -1;
+}
+
+.background-circle-5 {
+  position: absolute;
+  width: 917px;
+  height: 917px;
+  top: 3718px;
+  left: 1461px;
+  background: radial-gradient(50% 50% at 50% 50%, #04080d 0%, #f26430 100%);
+  border-radius: 50%;
+  filter: blur(200px);
+  z-index: -1;
+}
+
+.background-circle-6 {
+  position: absolute;
+  width: 1599px;
+  height: 1599px;
+  top: 0px;
+  left: -639px;
+  background: radial-gradient(
+    50% 50% at 49.97% 48.13%,
+    #5a0007 0%,
+    #040308 100%
+  );
+  border-radius: 50%;
+  filter: blur(200px);
+  z-index: -1;
+}
+
+/* Чтобы астронавт не выделялся */
+.astronaut_img {
+  opacity: 0.9;
+  width: 628px;
+  height: 800px;
+  display: block;
+  z-index: 1;
+}
+/* Шапка */
+header {
+  position: relative;
+  display: flex;
+  justify-content: space-between;
+  padding: 20px 50px;
+  align-items: center;
+  background: #19050a5c;
+  width: 100%;
+  z-index: 2;
+}
+
+.logo {
+  font-family: "Raleway-Italic";
+  margin-left: 70px;
+  font-size: 20px;
+  font-weight: bold;
+}
+
+nav {
+  margin-right: 70px;
+}
+
+/* Навигация */
+nav ul {
+  list-style: none;
+  display: flex;
+  gap: 20px;
+  width: 584px;
+  justify-content: space-between;
+  font-size: 20px;
+}
+
+nav ul li a {
+  text-decoration: none;
+  color: white;
+  font-weight: 500;
+}
+
+/* Основной контент */
+main {
+  position: relative;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 50px;
+  margin-top: 80px;
+  z-index: 2;
+}
+.image-container {
+  margin-top: 80px; /* Добавьте отступ сверху, чтобы изображение не накладывалось на хэдер */
+}
+.content {
+  margin-top: 50px;
+  margin-left: 60px;
+  max-width: 50%;
+}
+
+h1 {
+  font-weight: 300;
+  font-size: 144px;
+  margin-bottom: 20px;
+}
+
+h1 span {
+  font-weight: bold;
+  color: #ccc;
+}
+
+.content p {
+  font-weight: 300;
+  font-size: 24px;
+}
+
+/* Форма подписки */
+.email-form {
+  margin-top: 20px;
+  display: flex;
+}
+
+.email-form input {
+  padding: 10px;
+  border: none;
+  border-radius: 10px;
+  background: rgba(255, 255, 255, 0.1);
+  color: white;
+  width: 420px;
+  height: 56px;
+  margin-right: 48px;
+  font-weight: 300;
+  font-size: 23px;
+  font-family: "Raleway", sans-serif;
+}
+
+.email {
+  margin-top: 60px;
+}
+
+.email-form button {
+  padding: 10px 20px;
+  border: none;
+  border-radius: 10px;
+  background-color: rgba(0, 128, 128, 0.366);
+  color: white;
+  cursor: pointer;
+  width: 250px;
+  height: 56px;
+  font-family: "Raleway", sans-serif;
+  font-weight: 500;
+  font-size: 24px;
+}
+
+.about-us {
+  padding-top: 300px;
+  color: white;
+  text-align: center;
+  z-index: 1;
+}
+
+.about-content {
+  padding-top: 64px;
+  background: url(../images/img/mars.jpg);
+  border-radius: 32px;
+  line-height: 75.14px;
+  width: 1312px;
+  height: 855px;
+  margin: 0 auto;
+}
+
+.about-content h2 {
+  font-size: 64px;
+  font-weight: 700;
+  margin-bottom: 20px;
+}
+
+.about-content h3 {
+  font-family: Raleway;
+  font-weight: 400;
+  font-size: 36px;
+  line-height: 42.26px;
+}
+
+.about-content p {
+  width: 879px;
+  font-family: Raleway;
+  font-weight: 400;
+  font-size: 24px;
+  line-height: 28.18px;
+  margin: 0 auto; /* Центрируем блок */
+  text-align: justify;
+  text-align-last: justify;
+  padding-top: 20px;
+}
+
+.comm_system {
+  margin-left: 30px;
+  width: 100%;
+  padding-top: 300px;
+  color: white;
+  z-index: 1;
+  display: flex;
+  justify-content: space-between;
+}
+
+.comm_sys_image {
+  width: 428px;
+  height: 642px;
+}
+
+.comm_sys_image img {
+  border-radius: 38px;
+}
+
+.comm_sys_text {
+        margin-right: 150px;
+
+  margin-top: 200px;
+}
+
+.comm_sys_text h2 {
+  font-family: Raleway;
+  font-weight: 500;
+  font-size: 36px;
+  line-height: 42.26px;
+}
+
+.comm_sys_text p {
+  padding-top: 20px;
+  font-family: Raleway;
+  font-weight: 300;
+  font-size: 24px;
+  line-height: 28.18px;
+}
+
+.comm_sys_butt {
+  width: 224px;
+  height: 56px;
+  background: #024959b2;
+  border: none;
+  color: #ffffff;
+  font-family: Raleway;
+  font-weight: 500;
+  font-size: 24px;
+  border-radius: 15px;
+  margin-top: 48px;
+}
+
+.vent_system {
+  margin-left: 304px;
+  width: 1314px;
+  padding-top: 300px;
+  color: white;
+  z-index: 1;
+  display: flex;
+  justify-content: space-between;
+}
+
+.vent_system_image {
+  width: 428px;
+  height: 642px;
+      margin-right: 150px;
+}
+
+.vent_system_image img {
+  border-radius: 38px;
+  transform: scaleX(-1);
+}
+
+.vent_system_text {
+  margin-top: 200px;
+}
+
+.vent_system_text h2 {
+  font-family: Raleway;
+  font-weight: 500;
+  font-size: 36px;
+  line-height: 42.26px;
+}
+
+.vent_system_text p {
+  padding-top: 20px;
+  font-family: Raleway;
+  font-weight: 300;
+  font-size: 24px;
+  line-height: 28.18px;
+}
+
+.vent_system_butt {
+  width: 224px;
+  height: 56px;
+  background: #024959b2;
+  border: none;
+  color: #ffffff;
+  font-family: Raleway;
+  font-weight: 500;
+  font-size: 24px;
+  border-radius: 15px;
+  margin-top: 48px;
+}
+
+/* Общие стили для секции с тарифами */
+.pricing-section {
+  position: relative;
+  overflow: hidden;
+  margin-top: 300px;
+  color: white;
+  text-align: center;
+
+}
+
+.pricing-container {
+  display: flex;
+  justify-content: center;
+  gap: 20px;
+  width:100%;
+    margin-right: 150px;
+    margin-bottom: 40px;
+}
+
+/* Стили для карточки тарифа */
+.pricing-card {
+  background: #04080d99;
+  border-radius: 10px;
+  width: 352px;
+  height: 560px;
+  margin-right: 128px;
+  border-radius: 32px;
+  box-shadow: -8px 8px 32px 0px #f23a2940;
+}
+
+.pricing-card h2 {
+  font-family: Raleway;
+  font-weight: 500;
+  font-size: 24px;
+  padding-top: 64px;
+}
+
+.pricing-card ul {
+  margin-top: 44px;
+  list-style: none;
+  padding: 0;
+  margin-bottom: 20px;
+}
+
+.pricing-card ul li {
+  font-family: Raleway;
+  font-weight: 500;
+  font-size: 14px;
+  text-align: center;
+  font-size: 16px;
+  margin-top: 24px;
+  margin-bottom: 10px;
+}
+
+.price {
+  font-family: Raleway;
+  font-weight: 500;
+  font-size: 48px;
+  margin-top: 104px;
+}
+
+/* Стили для подвала */
+footer {
+  background-color: #19050a;
+  color: white;
+  text-align: center;
+  padding: 20px 0;
+  font-family: "Raleway", sans-serif;
+  font-size: 16px;
+  width: 100%;
+}
+
+.footer-content {
+  padding-left: 128px;
+  width: 1800px;
+  display: flex;
+  justify-content: space-between;
+}
+
+.footer-content p {
+  font-weight: 500;
+  font-size: 36px;
+}
+
+.footer_images {
+  width: 264px;
+  display: flex;
+  justify-content: space-between;
+}
+/* Медиазапросы для экранов до 400px */
+@media (max-width: 400px) {
+  /* Шапка */
+  header {
+    padding: 10px;
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .logo {
+    font-size: 16px;
+    margin: 10px 0;
+  }
+
+  nav ul {
+    flex-direction: column;
+    width: 100%;
+    align-items: center;
+    gap: 10px;
+  }
+
+  nav ul li {
+    font-size: 14px;
+  }
+
+  /* Основной контент */
+  main {
+    padding: 10px;
+    flex-direction: column;
+    text-align: center;
+  }
+
+  .image-container {
+    max-width: 100%;
+    margin-top: 20px;
+  }
+
+  .content {
+    max-width: 100%;
+    margin-left: 0;
+    text-align: center;
+  }
+
+  h1 {
+    font-size: 30px;
+    line-height: 1.2;
+    margin-bottom: 15px;
+  }
+
+  .content p {
+    font-size: 14px;
+    margin-top: 10px;
+  }
+
+  .email-form {
+    flex-direction: column;
+  }
+
+  .email-form input,
+  .email-form button {
+    width: 100%;
+    margin-bottom: 10px;
+    font-size: 14px;
+  }
+
+  /* Система связи и вентиляция */
+  .comm_system,
+  .vent_system {
+    flex-direction: column;
+    align-items: center;
+    padding: 20px 10px;
+  }
+
+  .comm_sys_image,
+  .vent_system_image {
+    width: 80%;
+    max-width: 250px;
+    margin-bottom: 20px;
+  }
+
+  .comm_sys_text,
+  .vent_system_text {
+    margin-right: 0;
+    text-align: center;
+    max-width: 90%;
+  }
+
+  /* Подвал */
+  footer {
+      width: 100%;
+    padding: 10px;
+  }
+
+  .footer-content {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .footer-content p {
+    font-size: 14px;
+    margin-bottom: 10px;
+  }
+
+  .footer_images {
+    flex-direction: column;
+    gap: 10px;
+  }
+}
+
