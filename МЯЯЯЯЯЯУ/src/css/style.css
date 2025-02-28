@@ -1,0 +1,415 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing:border-box ;
+}
+
+@font-face {
+    font-family: "Montserrat-Light";
+    src: url("../fonts/Montserrat/Montserrat-Light.ttf");
+}
+
+@font-face {
+    font-family: "Montserrat-SemiBoldItalic";
+    src: url("../fonts/Montserrat/Montserrat-SemiBoldItalic.ttf");
+}
+
+@font-face {
+    font-family: "Montserrat-SemiBold";
+    src: url("../fonts/Montserrat/Montserrat-SemiBold.ttf");
+}
+a {
+    text-decoration: none;
+}
+header{
+    position: relative;
+    height: 50px;
+}
+nav{
+    position: fixed;
+    width: 100%;
+    height: 70px;
+    background-color: #fff;
+    z-index: 2;
+    font-family:Montserrat-Light;
+}
+
+.menu-bar {
+    border-radius: 4px;
+    height: -webkit-fit-content;
+    height: -moz-fit-content;
+    height: fit-content;
+    display: inline-flex;
+    background-color: rgb(255, 255, 255);
+    -webkit-backdrop-filter: blur(10px);
+    backdrop-filter: blur(10px);
+    align-items: center;
+    padding: 0 10px;
+    margin: 0 0 0 2%;
+  }
+  .menu-bar li {
+    list-style-type: none;
+    color: white;
+    font-family:Montserrat-Light;
+    font-weight: bold;
+    padding: 12px 30px;
+    margin: 0 8px;
+    position: relative;
+    cursor: pointer;
+    white-space: nowrap;
+    justify-content: space-around;
+  }
+  .menu-bar li::before {
+    content: " ";
+    position: absolute;
+    top: 0;
+    left: 0;
+    height: 100%;
+    width: 100%;
+    z-index: -1;
+    transition: 0.2s;
+    border-radius: 25px;
+  }
+  .menu-bar li:hover {
+    color: rgb(235, 84, 255);
+  }
+  .menu-bar li:hover::before {
+    background: linear-gradient(to bottom, #f4f4f7, #f5f3f7);
+    box-shadow: 0px 3px 20px 0px rgb(229, 164, 255);
+    transform: scale(1.2);
+  }
+.bg{
+   min-height: 700px;
+   background-image:url(../images/items/banner.jpg) ;
+   background-position: center;
+   background-size:cover ;
+   margin: 0 auto;
+}
+
+main {
+    background-color: rgb(255, 255, 255);
+    margin-right: 150px;
+}
+p {
+    font-family: Montserrat-Light;
+}
+.waiting {
+  min-height: 500px;
+  width: 1350px;
+  background-color: gainsboro;
+  padding: 600px 0px 30px 160px;
+
+}
+.waiting .waiting_header {
+  color: #252525;
+  font-family: Montserrat-Light;
+  font-size: 30px;
+  font-weight: 400;
+  text-transform: uppercase;
+  text-align: center;
+}
+.waiting .waiting_wrapper {
+  display: flex;
+  justify-content: space-around;
+  margin-top: 45px;
+}
+.waiting .waiting_wrapper .waiting_item {
+  width: 339px;
+  text-align: center;
+}
+.waiting .waiting_wrapper .waiting_item .waiting_img {
+  height: 136px;
+}
+.waiting .waiting_wrapper .waiting_item .waiting_descr {
+  margin-top: 33px;
+  color: #4a4a4a;
+  font-family: Montserrat-Light;
+  font-size: 15px;
+  font-weight: 300;
+  line-height: 21px;
+}
+.block-left {
+    display: flex;
+    flex-direction: column;
+    background-color: gainsboro;
+    padding: 3%;
+    padding-right: 70px;
+    width: 20%;
+    height: 400px;
+    list-style-type: none;
+    font-family:Montserrat-Light ;
+    border-radius: 4px;
+}
+div.block-down {
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    font-family: Montserrat-Light;
+}
+.block-right{
+    background-color: gainsboro;
+    margin: 0 0 2% 2%;
+border-radius: 4px;
+}
+.cards {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, 350px);
+    width: 100%;
+    max-width: 1200px;
+    justify-content: center;
+    justify-items: center;
+    column-gap: 30px;
+    row-gap: 60px;
+    margin: 40px auto;
+  }
+  
+  .card {
+    background-color: #fff;
+    width: 225px;
+    min-height: 350px;
+    box-shadow: 1px 2px 4px rgba(0, 0, 0, 0.1);
+    display: flex;
+    flex-direction: column;
+    border-radius: 5px;
+    transition: 0.2s;
+    position: relative;
+    font-family:Montserrat-Light ;
+  }
+  
+  
+  .card:hover {
+    box-shadow: 4px 8px 16px rgb(160, 93, 214);
+  }
+  
+  .card__top {
+    flex: 0 0 220px; 
+    position: relative;
+    overflow: hidden;
+  }
+  .card__image {
+    display: block;
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+  }
+  
+  .card__image > img {
+    width: 100%;
+    height: 100%;
+    object-fit: contain;
+    transition: 0.2s;
+  }
+  
+  .card__image:hover > img {
+    transform: scale(1.1);
+  }
+  
+  .card__label {
+    padding: 4px 8px;
+    position: absolute;
+    bottom: 10px;
+    left: 10px;
+    background: rgb(105, 73, 156);
+    border-radius: 4px;
+    font-weight: 400;
+    font-size: 16px;
+    color: #fff;
+  }
+  
+  .card__bottom {
+    display: flex;
+    flex-direction: column;
+    flex: 1 0 auto; 
+    padding: 10px;
+  }
+  
+  .card__prices {
+    display: flex;
+    margin-bottom: 10px;
+    flex: 0 0 50%; 
+  }
+  
+  .card__price::after {
+    content: "₽";
+    margin-left: 4px;
+    position: relative;
+  }
+  
+  .card__price--discount {
+    font-weight: 700;
+    font-size: 19px;
+    color: #414141;
+    display: flex;
+    flex-wrap: wrap-reverse;
+  }
+  
+  .card__price--discount::before {
+    content: "Со скидкой";
+    font-weight: 400;
+    font-size: 13px;
+    color: rgb(65, 42, 42);;
+  }
+  
+  .card__price--common {
+    font-weight: 400;
+    font-size: 17px;
+    color: #606060;
+    display: flex;
+    flex-wrap: wrap-reverse;
+    justify-content: flex-end;
+  }
+  
+  .card__price--common::before {
+    content: "Обычная";
+    font-weight: 400;
+    font-size: 13px;
+    color: rgb(65, 42, 42);;
+  }
+  
+  .card__title {
+    display: block;
+    margin-bottom: 10px;
+    font-weight: 400;
+    font-size: 17px;
+    line-height: 150%;
+    color: #414141;
+  }
+  
+  .card__title:hover {
+    color: rgb(65, 42, 42);
+  }
+  
+  .card__add {
+    display: block;
+    width: 100%;
+    font-weight: 400;
+    font-size: 17px;
+    color: rgb(173, 156, 252);
+    padding: 10px;
+    text-align: center;
+    border: 1px solid rgb(141, 87, 228);
+    border-radius: 4px;
+    cursor: pointer; 
+    transition: 0.2s;
+    margin-top: auto;
+  }
+  a {
+    text-decoration: none;
+  }
+  
+  .card__add:hover {
+    border: 1px solid rgb(58, 49, 83);
+    background-color: rgb(74, 56, 107);
+    color: #fff;
+  }
+.container{
+    display: flex;
+    margin: 6% 0 0 0;
+}
+div.block-down figure {
+    margin-right: 1.5%;
+    margin-bottom: 3%;
+}
+div.block-down {
+ 
+    margin: 90% 0 0 0;
+}
+div.block-down-img{
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    margin-left: 50px;
+}
+
+
+button {
+    font-family:Montserrat-SemiBoldItalic;
+}
+
+footer {
+    max-height: 500px;
+    background-color:gainsboro;
+    padding: 10px 0 69px 0;
+    margin-left: 22%;
+}
+
+footer .forms {
+    max-width: 480px;
+    margin:auto;
+    padding: 16px;
+    border: 1px solid #eaeaea;
+}
+
+input[type="text"],
+input[type="email"],
+input[type="tel"],
+textarea {
+  background-color: #ffffff;
+  border: 1px solid #e5e5e4;
+  font-size: 16px;
+  height: auto;
+  margin: 0;
+  outline: 0;
+  padding: 8px 18px;
+  height: 48px;
+  width: 100%;
+  color: #8a97a0;
+  box-shadow: 0 1px 0 rgba(0,0,0,0.03) inset;
+  margin-bottom: 16px;
+  transition: all .2s ease;
+  font-family: Montserrat-Light;
+}
+
+input::placeholder {
+    color: #999;
+}
+
+input:hover,
+textarea:hover{
+  border-color: rgb(71, 44, 146);
+}
+
+.submit {
+    font-size: 16px;
+    font-weight: 600;
+    text-transform: uppercase;
+    padding: 15px 26px;
+    color: #FFF;
+    background-color: rgb(168, 162, 184);
+    border-radius: 4px;
+    border: 1px solid rgb(196, 167, 235);
+    text-align: center;
+    width: 100%;
+    font-family: Montserrat-Light;
+  }
+  .submit:hover{
+    background-color:rgb(132, 9, 233);
+    border: 1px solid rgb(72, 28, 192);
+  }
+
+  .futer_title {
+    text-align: center;
+    text-transform: uppercase;
+    line-height: 24px;
+    font-size: 20px;
+    font-family: Montserrat-Light;
+    font-weight: 400;
+    margin-bottom: 10px;
+  }
+
+  .social {
+    margin-top: 50px;
+    display: block;
+    max-width: 300px;
+    margin: 0 auto;
+  }
+  .footer_social {
+    display: flex;
+    justify-content: center;
+  }
+
+  .img_social {
+    width: 50px;
+  }
