@@ -1,0 +1,280 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: Montserrat;
+}
+
+.header {
+  width: 100%;
+  height: 128px;
+  display: flex;
+  justify-content: space-between;
+  padding: 30px 40px;
+}
+
+nav ul {
+  padding-top: 25px;
+  width: 518px;
+  list-style-type: none;
+  display: flex;
+  justify-content: space-between;
+  font-weight: 500;
+  font-size: 20px;
+  line-height: 26px;
+}
+
+.disc_main {
+  width: 100%;
+  height: 600px;
+  background: url(../images/img/first_bg.jpg);
+  padding: 80px 40px;
+}
+
+.disc_main h1 {
+  font-weight: 700;
+  font-size: 96px;
+  line-height: 105.6px;
+  color: #ffffff;
+}
+
+.disc_main button {
+  width: 218px;
+  height: 58px;
+  background: #339933;
+  border: none;
+  color: #ffffff;
+  border-radius: 5px;
+  font-weight: 600;
+  font-size: 20px;
+  line-height: 26px;
+  text-align: center;
+  margin-top: 40px;
+}
+
+.categories_block,
+.sales_block {
+  width: 100%;
+  height: 528px;
+}
+
+.categories_text,
+.sales_text {
+  display: flex;
+  padding: 80px 40px;
+}
+
+.categories_text h2,
+.sales_text h2 {
+  font-weight: 700;
+  font-size: 64px;
+  line-height: 70.4px;
+}
+
+.cat_line,
+.sales_line {
+  margin-left: 32px;
+  margin-top: 42px;
+  height: 10px;
+  width: 832px;
+  border-top: 1px #dddddd solid;
+}
+
+.sales_line {
+  width: 1193px;
+}
+
+.cat_p,
+.sales_p {
+  margin-top: 20px;
+  width: 142px;
+  height: 36px;
+  border: 1px solid #dddddd;
+  border-radius: 5px;
+  padding: 10px 0 0 5px;
+  color: #8b8b8b;
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 20.16px;
+  text-align: center;
+}
+
+.categories_cards,
+.sales_cards {
+  display: flex;
+  justify-content: space-between;
+  padding: 0 40px;
+}
+
+.cat_card,
+.sales_card {
+  width: 316px;
+  height: 392px;
+}
+
+.sales_card {
+  height: 422px;
+  border: 2px solid #dddddd;
+  border-radius: 5px;
+  position: relative;
+  background: #fff;
+  padding: 15px;
+  border-radius: 10px;
+  text-align: center;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+.sales_discount {
+  position: absolute;
+  top: 10px;
+  right: 10px;
+  background: #007f0e;
+  color: white;
+  font-size: 14px;
+  font-weight: bold;
+  padding: 5px 10px;
+  border-radius: 5px;
+}
+
+.sales_card img {
+  width: 100%;
+}
+
+.cat_card p,
+.sales_card p {
+  font-weight: 500;
+  font-size: 20px;
+  line-height: 26px;
+  text-align: center;
+  padding-top: 16px;
+}
+
+.sales_card p {
+  text-align: left;
+  margin-left: 32px;
+}
+
+.discount-block {
+  height: auto;
+  background: #007f0e;
+  color: white;
+  border-radius: 15px;
+  margin: 200px 40px 0 40px;
+}
+
+.discount_form_block {
+  display: flex;
+  justify-content: space-between;
+  width: 1296px;
+  height: 360px;
+  padding: 0 20px;
+}
+
+.discount-text {
+  font-weight: 700;
+  font-size: 64px;
+  line-height: 70.4px;
+  text-align: center;
+}
+
+.discount-form {
+  margin-top: 56px;
+
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+
+.discount-form input {
+  width: 516px;
+  height: 58px;
+  padding: 10px;
+  border: 2px solid white;
+  border-radius: 5px;
+  font-size: 16px;
+  background: transparent;
+  color: white;
+}
+
+.discount-form input::placeholder {
+  color: rgba(255, 255, 255, 0.8);
+}
+
+.discount-form button {
+  padding: 12px;
+  background: white;
+  color: #007f0e;
+  font-size: 16px;
+  font-weight: bold;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  margin-top: 32px;
+}
+
+.sales_card h5 {
+  font-weight: 600;
+  font-size: 40px;
+  line-height: 44px;
+  margin: 16px 0 0 32px;
+  width: 100px;
+}
+
+.sales_card span {
+  color: #8b8b8b;
+  font-weight: 600;
+  font-size: 20px;
+  line-height: 44px;
+  text-decoration: line-through;
+  margin-left: 25px;
+}
+
+.contact_block {
+  margin-top: 150px;
+  padding: 50px 40px;
+}
+
+.contact_block h2 {
+  font-weight: 700;
+  font-size: 64px;
+  line-height: 70.4px;
+  margin-bottom: 20px;
+}
+
+.contact_grid {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 20px;
+}
+
+.contact_item {
+  background: #f5f5f5;
+  padding: 20px;
+  border-radius: 10px;
+}
+
+.contact_item h4 {
+  color: #888;
+  font-weight: 500;
+  font-size: 20px;
+  line-height: 26px;
+  margin-bottom: 5px;
+}
+
+.contact_item p {
+  font-weight: 600;
+  font-size: 40px;
+  line-height: 44px;
+}
+
+.socials {
+  display: flex;
+  gap: 10px;
+  font-size: 24px;
+}
+
+.contact_map {
+  margin-top: 20px;
+  border-radius: 10px;
+  overflow: hidden;
+}
