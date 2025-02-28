@@ -1,0 +1,296 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: Manrope;
+  background: #000;
+  color: white;
+}
+
+header {
+  font-family: "IBM Plex Mono", monospace;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 20px 50px;
+  position: absolute;
+  width: 100%;
+  top: 0;
+  left: 0;
+}
+
+.logo {
+  font-size: 25px;
+  font-weight: 600;
+}
+
+nav {
+  display: flex;
+  gap: 20px;
+}
+
+nav a {
+  color: white;
+  text-decoration: none;
+  font-size: 14px;
+  opacity: 0.7;
+}
+
+.btn_buy-now {
+  background: #a100ff;
+  color: white;
+  padding: 10px 20px;
+  border-radius: 20px;
+  text-decoration: none;
+  font-size: 14px;
+  font-weight: 600;
+  display: inline-block;
+}
+
+.btn {
+  width: 212px;
+  height: 50px;
+  background: #a100ff;
+  color: white;
+  padding: 14px 45px;
+  border-radius: 20px;
+  text-decoration: none;
+  font-size: 14px;
+  font-weight: 600;
+  display: inline-block;
+}
+
+.hero {
+  display: flex;
+  align-items: center;
+  height: 120vh;
+  padding: 0 50px;
+  background: url("../images/img/main_bg.jpg") no-repeat center center/cover;
+}
+
+.content {
+  margin-left: 40px;
+  max-width: 600px;
+  margin-bottom: 120px;
+}
+
+h1 {
+  font-size: 48px;
+  font-weight: 600;
+  margin: 20px 0;
+}
+
+h3 {
+  font-size: 16px;
+  opacity: 0.7;
+}
+
+.features {
+  position: absolute;
+  top: 600px;
+  left: 50px;
+  display: flex;
+  justify-content: space-between;
+  padding: 50px;
+  max-width: 1000px;
+  margin: auto;
+}
+
+.feature {
+  margin-right: 70px;
+  max-width: 300px;
+}
+
+h4 {
+  font-family: Manrope;
+  font-size: 16px;
+  margin-bottom: 10px;
+}
+
+p {
+  font-size: 16px;
+  opacity: 0.9;
+}
+
+.phone_block {
+  margin-left: 112px;
+  margin-top: 100px;
+  display: flex;
+  justify-content: space-between;
+}
+
+.phone_text {
+  margin-top: 250px;
+  width: 594px;
+  height: 377px;
+}
+
+.phone_text h1 {
+  font-family: "Manrope", Regular;
+  font-size: 48px;
+}
+
+.phone_text p {
+  font-size: 15px;
+  line-height: 30px;
+  padding-left: 30px;
+}
+
+.phone_btn {
+  width: 212px;
+  height: 50px;
+  background: #a100ff;
+  color: white;
+  padding: 14px 45px;
+  border-radius: 20px;
+  text-decoration: none;
+  font-size: 14px;
+  font-weight: 600;
+  display: inline-block;
+  margin-top: 54px;
+}
+
+.phone_photo {
+  margin-right: 120px;
+}
+
+.rendered_block {
+  margin-top: 150px;
+}
+
+.rendered_title h2,
+.ready_title h2 {
+  font-size: 29px;
+  text-align: center;
+  margin-bottom: 30px;
+}
+
+.rendered_image img {
+  width: 1215px;
+  height: 1147px;
+  margin-left: 140px;
+}
+
+.ready_image img {
+  width: 1215px;
+  height: 238px;
+  margin-left: 140px;
+}
+
+.info_block {
+  margin-top: 50px;
+  margin-left: 240px;
+  display: flex;
+  justify-content: space-between;
+  width: 950px;
+}
+
+.info_cont h3 {
+  font-size: 15px;
+  text-align: center;
+  font-weight: 300;
+  opacity: 0.6;
+}
+
+.info_cont p {
+  padding-top: 20px;
+  font-size: 14px;
+  text-align: center;
+  line-height: 22px;
+}
+
+.request_block{
+    margin-top: 170px;
+    display: flex;
+    justify-content: space-between;
+}
+
+.request_photo{
+    margin-left: 150px;
+}
+
+.request_text{
+    margin-top: 80px;
+    margin-right: 190px;
+}
+
+.request_text h1{
+    font-size: 29px;
+    padding-bottom: 20px;
+}
+
+.request_text p{
+    font-size: 16px;
+    line-height: 30px;
+    opacity: 0.8;
+}
+
+.request_text button{
+    width: 180px;
+    height: 50px;
+    background: #a100ff;
+    color: white;
+    border-radius: 20px;
+    text-decoration: none;
+    font-size: 14px;
+    font-weight: 600;
+    display: inline-block;
+    margin-top: 54px;
+}
+
+.grab_block{
+    margin-top: 225px;
+    width: 100% ;
+    height: 435px;  
+    background: url(../images/img/footer_image.jpg) no-repeat center center/cover;
+}
+
+.grab_text{
+    padding-top: 115px;
+    text-align: center;
+}
+
+.grab_text h1{
+ font-size: 51px;
+}
+
+.grab_text p{
+    font-size: 18px;
+    padding-bottom: 42px;
+}
+
+.grab_text button{
+    width: 212px;
+    height: 50px;
+    background: #a100ff;
+    color: white;
+    border-radius: 20px;
+    text-decoration: none;
+    font-size: 14px;
+    font-weight: 600;
+    display: inline-block;
+    margin-top: 54px;
+}
+
+.footer_text{
+    text-align: center;
+    font-family: "IBM Plex Mono", monospace;
+}
+
+.footer_text h1{
+    padding-top: 90px;
+    padding-bottom: 24px;
+    font-size: 49px;
+}
+
+.footer_text h2{
+    font-size: 16px;
+    padding-bottom: 50px;
+}
+
+.footer_text p {
+    padding-bottom: 80px;
+}
